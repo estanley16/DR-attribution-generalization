@@ -13,6 +13,7 @@
 | TCAV_DR_CC.py | Run TCAV experiment with custom model wrapper and save functions  | Compute Canada |
 | plot_tcav_scores.py | Plot TCAV scores for each class, concept, and layer with CSV file saved by TCAV code | Local |
 
+Note: the inceptionV3 base model (pre-trained on ImageNet) can be found on Basecamp
 
 ### File structure required for image data generator: 
 ```
