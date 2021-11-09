@@ -39,6 +39,9 @@ data
 
 
 ## TCAV 
+
+Note: `utils_saveplot.py` under my forked `estanley16/tcav` repository contains my modifcations which saves plots instead of just diplaying them, as well as CSV files containing concept, layer, TCAV scores, p values, etc. for that experiment
+
 ### Example file structure to run TCAV: 
 
 ```
@@ -90,3 +93,5 @@ TCAV_cropped_images
 ├── tcav_exp1_cropped_model4mixed4_class3
 ├── tcav_exp1_cropped_model4mixed4_class4
 ```
+
+
