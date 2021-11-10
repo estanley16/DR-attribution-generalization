@@ -13,7 +13,20 @@
 | TCAV_DR_CC.py | Run TCAV experiment with custom model wrapper and save functions  | Compute Canada |
 | plot_tcav_scores.py | Plot TCAV scores for each class, concept, and layer with CSV file saved by TCAV code | Local |
 
-Note: the inceptionV3 base model (pre-trained on ImageNet) can be found on Basecamp
+Note: the inceptionV3 base model I used (pre-trained on ImageNet) can be found on Basecamp 
+To download a separate base model the same way I did (eg. for a different size input):
+
+```
+from tensorflow.keras.applications.inception_v3 import InceptionV3
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input
+
+input_tensor = Input(shape=(256, 256, 3)) #whatever shape you are using
+
+model = InceptionV3(input_tensor=input_tensor, weights='imagenet', include_top=False)
+
+model.save(output_directory)
+````
 
 ### File structure required for image data generator: 
 ```
